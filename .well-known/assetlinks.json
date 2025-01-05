@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.ramosoft.numb_v5_1",
+        "sha256_cert_fingerprints": [
+          "76:B1:D1:1B:56:C4:D4:AD:66:16:94:E0:E6:41:B6:70:E6:4E:5D:FD:2E:A9:05:0F:D7:95:BD:87:D8:AA:A5:28"
+        ]
+      }
+    }
+  ]
