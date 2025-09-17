@@ -1,51 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pension Calculator — Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Təxmini Pensiya Kalkulyatoru — Privacy Policy</title>
   <style>
-    :root{--bg:#f6f8fb;--card:#fff;--muted:#637294;--accent:#0b69ff}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; background:var(--bg); color:#071125; margin:0; padding:28px;}
-    .wrap{max-width:980px;margin:0 auto;}
-    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 8px 30px rgba(11,22,40,0.04)}
-    header{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
-    h1{margin:0;font-size:26px}
-    .meta{color:var(--muted);font-size:14px}
-    nav{margin:14px 0}
-    nav a{color:var(--accent);text-decoration:none;margin-right:12px;font-size:14px}
-    h2{margin-top:22px;font-size:18px}
-    h3{margin-top:12px;font-size:15px}
-    p, ul{color:#233047;font-size:15px;line-height:1.56}
-    ul{margin-left:20px}
-    .muted{color:var(--muted);font-size:13px}
-    code{background:#eef4ff;padding:2px 6px;border-radius:6px;font-size:92%}
-    footer{margin-top:22px;border-top:1px solid #eef2f8;padding-top:12px;color:var(--muted);font-size:13px}
-    .contact{background:#f2f8ff;padding:12px;border-radius:8px;margin-top:12px}
-    .small{font-size:13px;color:var(--muted)}
-    a.button{display:inline-block;padding:8px 12px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;margin-top:8px}
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --primary: #1e3a8a;
+      --accent: #3b82f6;
+      --text: #1e293b;
+      --muted: #6b7280;
+      --highlight: #fef3c7;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 32px 16px;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--primary);
+      margin: 0;
+    }
+    .meta {
+      font-size: 16px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .disclaimer {
+      background: var(--highlight);
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 24px 0;
+      justify-content: center;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    nav a:hover {
+      background: rgba(59, 130, 246, 0.1);
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 32px;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-top: 16px;
+    }
+    p, ul {
+      font-size: 16px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    ul {
+      margin-left: 24px;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    code {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--primary);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .contact {
+      background: rgba(59, 130, 246, 0.05);
+      padding: 16px;
+      border-radius: 12px;
+      margin-top: 16px;
+      font-size: 16px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--accent);
+      color: #ffffff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 16px;
+      transition: background 0.2s;
+    }
+    .button:hover {
+      background: #2563eb;
+    }
+    footer {
+      margin-top: 32px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding-top: 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+      h2 { font-size: 20px; }
+      p, ul { font-size: 15px; }
+      .card { padding: 24px; }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card" role="main" aria-labelledby="policy-title">
       <header>
-        <div>
-          <h1 id="policy-title">Pension Calculator — Privacy Policy</h1>
-          <div class="meta">Effective date: <strong>September 15, 2025</strong> · App: <strong>Pension Calculator</strong> · App ID: <code>com.ramosoft.pensiya_kalkulyatoru</code></div>
+        <h1 id="policy-title">Təxmini Pensiya Kalkulyatoru — Privacy Policy</h1>
+        <div class="meta">
+          Effective date: <strong>September 17, 2025</strong> · App: <strong>Təxmini Pensiya Kalkulyatoru</strong> · App ID: <code>com.ramosoft.pensiya_kalkulyatoru</code>
+        </div>
+        <div class="disclaimer">
+          <strong>Important:</strong> This app is not affiliated with any government entity and provides only estimated pension calculations. For official pension information, visit <a href="https://sosial.gov.az" target="_blank" rel="noopener">sosial.gov.az</a>.
         </div>
         <div class="contact">
-          <div class="small"><strong>Data controller / contact</strong></div>
-          <div class="small">Developer: Ramosoft — Email: <a href="mailto:ramosoft94@gmail.com">ramosoft94@gmail.com</a></div>
+          <strong>Data Controller / Contact:</strong> Ramosoft — <a href="mailto:ramosoft94@gmail.com">ramosoft94@gmail.com</a>
         </div>
       </header>
 
       <nav aria-label="Quick links">
         <a href="#overview">Overview</a>
-        <a href="#data">Data we collect</a>
-        <a href="#use">How we use data</a>
-        <a href="#sharing">Sharing & third parties</a>
-        <a href="#rights">Your rights</a>
+        <a href="#data">Data We Collect</a>
+        <a href="#use">How We Use Data</a>
+        <a href="#sharing">Sharing & Third Parties</a>
+        <a href="#rights">Your Rights</a>
         <a href="#security">Security</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -53,154 +177,152 @@
       <section id="overview">
         <h2>1. Overview</h2>
         <p>
-          Pension Calculator is a simple mobile application that provides estimated pension information based on user inputs (salary history, contribution rate, retirement age, etc.). This Policy explains what information the App collects, why it collects that information, how it is used, with whom it is shared, and what control you have over your information.
+          Təxmini Pensiya Kalkulyatoru is a mobile app designed to provide estimated pension calculations based on user inputs like salary history, contribution rates, and retirement age. This Privacy Policy explains what data we collect, why we collect it, how it’s used, who it’s shared with, and your control over your information.
         </p>
-        <p class="muted"><strong>Important:</strong> The App does not require account registration and does not collect passwords or full names unless you voluntarily enter them into free-text fields (which the App generally does not require).</p>
+        <p class="muted">
+          <strong>Note:</strong> The app does not require account registration, passwords, or full names unless voluntarily provided in free-text fields (not typically required).
+        </p>
       </section>
 
       <section id="data">
-        <h2>2. Data we collect</h2>
-        <p>We minimize data collection to what is necessary for analytics, app operation and ad delivery. Categories of data collected:</p>
+        <h2>2. Data We Collect</h2>
+        <p>We collect minimal data necessary for app functionality, analytics, and ad delivery. The categories are:</p>
 
-        <h3>2.1. Data you provide directly</h3>
+        <h3>2.1. Data You Provide Directly</h3>
         <ul>
-          <li><strong>Input data for pension estimates:</strong> numeric values such as salary figures, contribution percentages, retirement age. These values are used only to calculate your pension estimate and are not used to identify you.</li>
-          <li><strong>Support & feedback:</strong> if you send an email or feedback message, that content and your email address will be retained to respond.</li>
+          <li><strong>Pension Calculation Inputs:</strong> Numeric values such as salary, contribution percentages, and retirement age. These are used solely for calculations and not to identify you.</li>
+          <li><strong>Support & Feedback:</strong> If you send us an email or feedback, we retain the content and your email address to respond.</li>
         </ul>
 
-        <h3>2.2. Automatically-collected technical data (Firebase Analytics)</h3>
-        <p>
-          We use <strong>Firebase Analytics</strong> to collect aggregated and anonymous usage and performance data such as:
-        </p>
+        <h3>2.2. Automatically Collected Data (Firebase Analytics)</h3>
+        <p>We use <strong>Firebase Analytics</strong> to collect anonymous, aggregated usage data, including:</p>
         <ul>
-          <li>App metrics: sessions, screens visited, feature usage, crash reports and performance traces.</li>
-          <li>Device metadata: device model, OS version, locale, app version, language.</li>
-          <li>Anonymous identifiers issued by Firebase or Google services (non-personally-identifying).</li>
+          <li>App metrics: sessions, screen views, feature usage, crash reports, and performance metrics.</li>
+          <li>Device metadata: device model, OS version, app version, language, and locale.</li>
+          <li>Anonymous identifiers: issued by Firebase or Google services (not personally identifiable).</li>
         </ul>
-        <p class="muted">Purpose: to improve app stability, diagnose crashes, and enhance the user experience. For Firebase privacy details see the official Firebase privacy documentation.</p>
+        <p class="muted">Purpose: Improve app stability, diagnose crashes, and enhance user experience. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a> for details.</p>
 
-        <h3>2.3. Advertising identifiers / ad-related data (Google Mobile Ads)</h3>
-        <p>
-          We display ads in the App via Google mobile ad services (Google Mobile Ads / AdMob). These ad providers may collect advertising identifiers (for Android: Advertising ID) and ad interaction data (impressions, clicks) to serve and measure ads.
-        </p>
-        <p class="muted">You can reset or delete your Advertising ID from your device settings; you can also control ad personalization via Google's Ad Settings. See <em>How to control / opt out</em> below for links and instructions.</p>
+        <h3>2.3. Advertising Data (Google Mobile Ads)</h3>
+        <p>We use <strong>Google Mobile Ads/AdMob</strong> to display ads, which may collect:</p>
+        <ul>
+          <li><strong>Advertising ID:</strong> A unique identifier for ad personalization (Android).</li>
+          <li><strong>Ad Interactions:</strong> Impressions, clicks, and related data to measure ad performance.</li>
+        </ul>
+        <p class="muted">You can reset your Advertising ID or opt out of personalized ads in your device settings or via <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ad Settings</a>.</p>
       </section>
 
       <section id="use">
-        <h2>3. How we use data</h2>
+        <h2>3. How We Use Data</h2>
+        <p>We use collected data to:</p>
         <ul>
-          <li>To perform the App’s core functionality — calculating and displaying estimated pension amounts based on user inputs.</li>
-          <li>To measure and analyze app usage and performance (Firebase Analytics) so we can fix crashes, improve features, and prioritize updates.</li>
-          <li>To display and measure advertising (Google Mobile Ads / AdSense) and support revenue generation that keeps the App free.</li>
-          <li>To respond to support requests and communications you send to us (by email).</li>
+          <li>Calculate and display estimated pension amounts based on your inputs.</li>
+          <li>Analyze app usage and performance via Firebase Analytics to fix crashes and improve features.</li>
+          <li>Deliver and measure ads via Google Mobile Ads to keep the app free.</li>
+          <li>Respond to your support requests or feedback via email.</li>
         </ul>
 
-        <h3>Legal bases (for users in the EEA / UK)</h3>
-        <p class="muted">If you are an EU/EEA user, our lawful bases for processing are:</p>
+        <h3>Legal Bases (EEA/UK Users)</h3>
+        <p class="muted">For EU/EEA/UK users, our legal bases for data processing are:</p>
         <ul>
-          <li><strong>Performance of a contract:</strong> processing necessary to provide the App’s functionality when relevant.</li>
-          <li><strong>Legitimate interests:</strong> analyzing aggregated usage data, improving the App and securing the App (we balance these interests against user rights).</li>
-          <li><strong>Consent:</strong> where required (for personalized advertising), we rely on explicit consent mechanisms implemented in the App (or device-level consent on iOS with App Tracking Transparency).</li>
+          <li><strong>Contract:</strong> Processing necessary to provide app functionality.</li>
+          <li><strong>Legitimate Interests:</strong> Improving the app and analyzing usage, balanced with your rights.</li>
+          <li><strong>Consent:</strong> For personalized ads, where required, via in-app or device-level consent (e.g., iOS App Tracking Transparency).</li>
         </ul>
       </section>
 
       <section id="sharing">
-        <h2>4. Sharing & third parties</h2>
-        <p>We do not sell personal data. We may share information with:</p>
+        <h2>4. Sharing & Third Parties</h2>
+        <p>We do not sell your data. Data may be shared with:</p>
         <ul>
-          <li><strong>Google / Firebase:</strong> analytics and crash reporting. Firebase processes data on our behalf as a service provider.</li>
-          <li><strong>Google Mobile Ads / Ad networks:</strong> ad serving, measurement and fraud prevention. Ad networks may independently collect identifiers and other signals for ad personalization.</li>
-          <li><strong>Law enforcement or legal requests:</strong> when required by law or to protect rights, safety or property.</li>
+          <li><strong>Google/Firebase:</strong> For analytics and crash reporting, acting as our data processor.</li>
+          <li><strong>Google Mobile Ads/Ad Networks:</strong> For ad delivery, measurement, and fraud prevention.</li>
+          <li><strong>Legal Authorities:</strong> When required by law or to protect rights, safety, or property.</li>
         </ul>
-        <p class="muted">Third-party providers have their own privacy practices. We encourage you to review their privacy policies (links in the "Sources" section below).</p>
+        <p class="muted">Third parties have their own privacy policies. Review them at <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a> and <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener">Google Ads</a>.</p>
       </section>
 
       <section id="retention">
-        <h2>5. Data retention</h2>
-        <p>We retain analytics and ad-related data according to the retention policies of the third-party providers. For example, Google Analytics/Firebase data retention settings and Google’s storage policies apply to the analytics data stored by that service. Crash logs and aggregated analytics are retained as needed to debug and improve the app.</p>
-        <p class="muted">If you request deletion of data we hold directly (support emails, exported logs that include your email), we will delete such data subject to verification and any legal exceptions.</p>
+        <h2>5. Data Retention</h2>
+        <p>Analytics and ad data are retained per third-party provider policies (e.g., Firebase and Google Ads). Support emails or feedback are kept only as needed to respond, unless you request deletion.</p>
+        <p class="muted">To request deletion of data we hold directly, contact <a href="mailto:ramosoft94@gmail.com">ramosoft94@gmail.com</a>.</p>
       </section>
 
       <section id="choices">
-        <h2>6. Your choices & how to opt out</h2>
-
+        <h2>6. Your Choices & Opting Out</h2>
         <h3>Analytics</h3>
-        <p>
-          If you prefer not to allow Firebase analytics collection, you can:
-        </p>
+        <p>To stop Firebase Analytics data collection:</p>
         <ul>
-          <li>Uninstall the App to stop data collection by the App on that device.</li>
-          <li>Use device-level or Google account privacy controls where available; some SDKs also support opt-out flags the developer can implement.</li>
+          <li>Uninstall the app to halt data collection on your device.</li>
+          <li>Use device-level privacy controls or Google account settings to limit analytics.</li>
         </ul>
 
-        <h3>Ads personalization & Advertising ID</h3>
-        <p>To control or reset your Android Advertising ID and ad personalization:</p>
+        <h3>Ads & Advertising ID</h3>
+        <p>Control ad personalization:</p>
         <ul>
-          <li>Open your device <em>Settings → Privacy → Ads</em> (or similar) to reset or delete the advertising ID.</li>
-          <li>Manage ad personalization at <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ad Settings</a>.</li>
+          <li>Android: Go to <em>Settings → Privacy → Ads</em> to reset or delete your Advertising ID.</li>
+          <li>Manage ad preferences at <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ad Settings</a>.</li>
+          <li>iOS: Use App Tracking Transparency to control tracking across apps.</li>
         </ul>
-        <p class="muted">For iOS devices, App Tracking Transparency (ATT) controls whether an app may track you across apps and websites.</p>
       </section>
 
       <section id="rights">
-        <h2>7. Your privacy rights</h2>
-        <p class="muted">Below are common rights available under laws like the GDPR and CCPA. Availability depends on your jurisdiction.</p>
+        <h2>7. Your Privacy Rights</h2>
+        <p class="muted">Rights depend on your jurisdiction (e.g., GDPR, CCPA).</p>
 
-        <h3>GDPR (EU / EEA / UK residents)</h3>
+        <h3>GDPR (EU/EEA/UK)</h3>
         <ul>
-          <li><strong>Access:</strong> request a copy of personal data we hold about you;</li>
-          <li><strong>Rectification:</strong> correct inaccurate data;</li>
-          <li><strong>Erasure (“Right to be forgotten”):</strong> request deletion of your personal data where applicable;</li>
-          <li><strong>Restriction / objection:</strong> ask us to stop or limit certain processing (e.g., profiling for ads);</li>
-          <li><strong>Data portability:</strong> request a machine-readable copy of data you provided;</li>
-          <li><strong>Withdraw consent:</strong> where processing is based on consent, you may withdraw it at any time.</li>
+          <li><strong>Access:</strong> Request a copy of your data.</li>
+          <li><strong>Rectification:</strong> Correct inaccurate data.</li>
+          <li><strong>Erasure:</strong> Request deletion of your data.</li>
+          <li><strong>Restriction/Objection:</strong> Limit or object to certain processing (e.g., ad profiling).</li>
+          <li><strong>Portability:</strong> Receive a machine-readable copy of your data.</li>
+          <li><strong>Withdraw Consent:</strong> Revoke consent for processing where applicable.</li>
         </ul>
 
-        <h3>CCPA (California residents)</h3>
+        <h3>CCPA (California)</h3>
         <ul>
-          <li><strong>Right to know:</strong> request categories of personal information collected and shared;</li>
-          <li><strong>Right to delete:</strong> request deletion of personal information (subject to exceptions);</li>
-          <li><strong>Right to opt-out of sale:</strong> request that we do not sell your personal information (we do not sell personal data; ad networks may have separate options).</li>
+          <li><strong>Know:</strong> Request details on collected or shared data.</li>
+          <li><strong>Delete:</strong> Request deletion of your data (with exceptions).</li>
+          <li><strong>Opt-Out of Sale:</strong> We do not sell data, but ad networks may offer opt-out options.</li>
         </ul>
-
-        <p>To exercise any rights, email us at <a href="mailto:ramosoft94@gmail.com">ramosoft94@gmail.com</a>. We will verify requests and respond in accordance with applicable law (we aim to respond within 30 days; if we need more time we will notify you).</p>
+        <p><a href="mailto:ramosoft94@gmail.com" class="button">Exercise Your Rights</a></p>
       </section>
 
       <section id="security">
         <h2>8. Security</h2>
-        <p>We use administrative, technical, and physical safeguards to protect data. Examples include access controls, using secure transport (HTTPS) for network transmission, and relying on reputable third-party providers with their own security programs.</p>
-        <p class="muted">No system is 100% secure—if a breach affects your data we will follow legal obligations to notify affected users and authorities as required.</p>
+        <p>We use industry-standard safeguards, including HTTPS for data transmission and secure third-party providers like Google/Firebase, to protect your data.</p>
+        <p class="muted">If a data breach occurs, we will notify affected users and authorities as required by law.</p>
       </section>
 
       <section id="children">
-        <h2>9. Children</h2>
-        <p>The App is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, contact us and we will remove it.</p>
+        <h2>9. Children’s Privacy</h2>
+        <p>The app is not intended for children under 13. We do not knowingly collect data from children. Contact us if you believe we have such data for removal.</p>
       </section>
 
       <section id="international">
-        <h2>10. International transfers</h2>
-        <p>Data processed by third-party service providers (e.g., Google/Firebase) may be transferred to, stored, and processed in countries other than your own. By using the App you consent to such transfers and processing under the third-party providers’ terms and applicable law.</p>
+        <h2>10. International Data Transfers</h2>
+        <p>Data may be processed or stored outside your country by third parties (e.g., Google/Firebase) under their terms and applicable laws.</p>
       </section>
 
       <section id="changes">
-        <h2>11. Changes to this policy</h2>
-        <p>We may update this policy occasionally. If we make material changes we will update the effective date at the top and, where required by law, provide notice inside the App or by email (if you provided an email address).</p>
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this policy. Material changes will update the effective date and, where required, we’ll notify you via the app or email.</p>
       </section>
 
       <section id="contact">
-        <h2>12. Contact</h2>
-        <p>If you have questions about this Privacy Policy or want to exercise your privacy rights, contact:</p>
-        <div class="small">
+        <h2>12. Contact Us</h2>
+        <p>For questions or to exercise your rights, contact:</p>
+        <div class="contact">
           <strong>Email:</strong> <a href="mailto:ramosoft94@gmail.com">ramosoft94@gmail.com</a><br/>
-          <strong>App ID:</strong> <code>com.ramosoft.pensiya_kalkulyatoru</code><br/>
+          <strong>App ID:</strong> <code>com.ramosoft.pensiya_kalkulyatoru</code>
         </div>
-
-        <p class="muted">If you are an EU resident and remain unsatisfied after contacting us, you have the right to lodge a complaint with your supervisory authority.</p>
+        <p class="muted">EU residents: If unsatisfied, you may contact your local data protection authority.</p>
       </section>
 
       <footer>
-        <p class="muted">Last updated: September 15, 2025 — Pension Calculator (com.ramosoft.pensiya_kalkulyatoru)</p>
-        <p class="muted">This document is provided for informational purposes and does not constitute legal advice. For full legal compliance (especially for Play Store / App Store submission) consult a qualified attorney.</p>
+        <p>Last updated: <strong>September 17, 2025</strong> — Təxmini Pensiya Kalkulyatoru (<code>com.ramosoft.pensiya_kalkulyatoru</code>)</p>
+        <p class="muted">This policy is for informational purposes and does not constitute legal advice. Consult a qualified attorney for legal compliance.</p>
       </footer>
     </div>
   </div>
